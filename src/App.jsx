@@ -2,13 +2,12 @@ import Grainient from "./components/Grainient";
 
 import "./App.css";
 import SpotlightCard from "./components/SpotlightCard";
+import Button from "./components/Button";
 
 const App = () => {
     return (
         <>
-            <div
-                className="w-full h-screen fixed top-0 left-0"
-                style={{ zIndex: -1 }}>
+            <div className="w-full h-screen fixed top-0 left-0 z-[-1]">
                 <Grainient
                     color1="#c285ff"
                     color2="#000000"
@@ -34,23 +33,18 @@ const App = () => {
                     zoom={0.9}
                 />
             </div>
+
             <section id="home">
                 <div className="h-screen grid place-items-center">
                     <div className="max-w-screen-lg flex flex-col gap-10 text-center">
-                        <h1 className="text-8xl hero-title">
-                            Hi, this is Frostii
+                        <h1 className="text-4xl text-glow">
+                            Hi, this is <span className="text-blue-300">Frostii</span>
                         </h1>
-                        <div
-                            style={{
-                                fontFamily: `'Press Start 2P', cursive`,
-                            }}>
+                        <div>
                             <p className="text-2xl">
-                                A beginner working with{" "}
-                                <span className="text-purple-500 font-bold">
-                                    Pure Data
-                                </span>
+                                A <span className="text-amber-300 font-bold">Jr.DSP</span> developer
                             </p>
-                            <p className="text-xl">
+                            <p>
                                 <br />I design simple audio patches to explore
                                 how sound works. I experiment with basic
                                 oscillators, filters,
@@ -70,44 +64,17 @@ const App = () => {
                 </div>
             </section>
             <section id="plugins">
-                <h1
-                    className="text-center my-40 section-title">
-                    Plugins
-                </h1>
-                {/* <div className="h-screen grid place-items-center">
-                    <div className="block">
-                        <h1 className="text-4xl font-bold mb-6">
-                            FR-Resonator
-                        </h1>
-                        <p>
-                            FR-Resonators is a 7-voice resonator plugin built in
-                            Plugdata.
-                            <br />
-                            Each voice features independent gain, panning, and
-                            detuning controls,
-                            <br /> letting you shape rich harmonic textures,
-                            wide stereo movement,
-                            <br /> and evolving tonal layers from any input
-                            sound.
-                        </p>
-                        <a
-                            href="#"
-                            className="mt-6 p-3 px-6 bg-blue-500 w-fit rounded-full block">
-                            Coming Soon...
-                        </a>
-                    </div>
-                </div> */}
-
+                <h1 className="text-center my-40 text-glow text-4xl">Plugins</h1>
                 <div>
                     <SpotlightCard
                         className="rounded-xl m-10"
-                        spotlightColor="rgba(0, 229, 255, 0.2)">
+                        spotlightColor="rgba(0, 200, 255, 0.2)">
                         <div className="block">
                             <h1 className="text-4xl font-bold mb-6">
-                                FR-Resonator
+                                FT-Resonator
                             </h1>
                             <p>
-                                FR-Resonators is a 7-voice resonator plugin
+                                FT-Resonator is a 7 voices comb resonator effect plugin
                                 built in Plugdata.
                                 <br />
                                 Each voice features independent gain, panning,
@@ -117,14 +84,12 @@ const App = () => {
                                 <br /> and evolving tonal layers from any input
                                 sound.
                             </p>
-                            <a
-                                href="#"
-                                className="mt-6 p-3 px-6 bg-green-500 w-fit rounded-full block">
+                            <Button>
                                 Coming Soon...
-                            </a>
+                            </Button>
                         </div>
                     </SpotlightCard>
-                    <SpotlightCard
+                    {/* <SpotlightCard
                         className="rounded-xl m-10"
                         spotlightColor="rgba(255, 255, 255, 0.2)">
                         <div className="block">
@@ -142,7 +107,7 @@ const App = () => {
                                 Coming Soon...
                             </a>
                         </div>
-                    </SpotlightCard>
+                    </SpotlightCard> */}
                 </div>
             </section>
             <section id="contact">
@@ -151,17 +116,13 @@ const App = () => {
                         <h1 className="text-4xl font-bold mb-6 section-title text-center">
                             Get in Touch
                         </h1>
-                        <p className="text-xl max-w-screen-md mx-auto" style={{fontFamily: `'Press Start 2P', cursive`}}>
+                        <p
+                            className="subtitle max-w-screen-md">
                             I'm currently open to new opportunities and
                             collaborations. Whether you have a project in mind,
                             want to discuss potential work together, or just
                             want to say hi, feel free to reach out!
                         </p>
-                        {/* <a
-                            href="mailto:contact@frosty.dev"
-                            className="mt-6 p-3 px-6 bg-blue-500 w-fit rounded-full block">
-                            contact@frosty.dev
-                        </a> */}
                     </div>
                 </div>
             </section>

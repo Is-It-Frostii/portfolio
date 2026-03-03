@@ -1,8 +1,12 @@
-.hero-title {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 3rem;
+.text-glow {
+    /* font-family: 'Press Start 2P', cursive;
+    font-size: 3rem; */
     color: white;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* .subtitle {
+    font-family: 'Press Start 2P', cursive;
 }
 
 .section-title {
@@ -20,4 +24,4 @@
     background-color: white;
     margin: 10px auto 0;
     border-radius: 2px;
-}
+} */

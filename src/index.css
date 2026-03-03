@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    @apply antialiased;
+}
+
 @font-face {
     font-family: 'PixelCaps!';
     src: url('./assets/fonts/PixelCaps!.otf') format('opentype');
     font-display: swap;
     descent-override: 0%;
     ascent-override: 100%;
-}
-
-body {
-    color: white;
-    font-family: Nunito, sans-serif;
-    @apply antialiased;
 }

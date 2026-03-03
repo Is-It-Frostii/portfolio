@@ -20,11 +20,6 @@ const Navigation = () => {
                             Plugins
                         </a>
                     </li>
-                    {/* <li>
-                        <a href="#" className="nav-link">
-                            About
-                        </a>
-                    </li> */}
                     <li>
                         <a href="#contact" className="nav-link">
                             Contact
