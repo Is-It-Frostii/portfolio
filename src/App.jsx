@@ -36,35 +36,38 @@ const App = () => {
 
             <section id="home">
                 <div className="h-screen grid place-items-center">
-                    <div className="max-w-screen-lg flex flex-col gap-10 text-center">
-                        <h1 className="text-4xl text-glow">
-                            Hi, this is <span className="text-blue-300">Frostii</span>
+                    <div className="max-w-screen-lg gap-10 block">
+                        <h1 className="text-4xl text-glow mb-10">
+                            Hi, this is{" "}
+                            <span className="text-blue-300">Frostii</span>
                         </h1>
-                        <div>
-                            <p className="text-2xl">
-                                A <span className="text-amber-300 font-bold">Jr.DSP</span> developer
-                            </p>
-                            <p>
-                                <br />I design simple audio patches to explore
-                                how sound works. I experiment with basic
-                                oscillators, filters,
-                                <br />
-                                and sliders to understand signal flow and
-                                control. Each small project helps me improve my
-                                logic,
-                                <br />
-                                organization, and understanding of digital sound
-                                design.
-                                <br />I aim to build clean, simple, and
-                                functional patches while steadily growing my
-                                skills.
-                            </p>
-                        </div>
+
+                        <p className="text-2xl mb-10">
+                            A{" "}
+                            <span className="text-amber-300 font-bold">
+                                Jr.DSP
+                            </span>{" "}
+                            developer
+                        </p>
+                        <p>
+                            I design simple audio patches to explore how sound
+                            works. I experiment with basic oscillators, filters,
+                            <br />
+                            and sliders to understand signal flow and control.
+                            Each small project helps me improve my logic,
+                            <br />
+                            organization, and understanding of digital sound
+                            design.
+                            <br />I aim to build clean, simple, and functional
+                            patches while steadily growing my skills.
+                        </p>
                     </div>
                 </div>
             </section>
             <section id="plugins">
-                <h1 className="text-center my-40 text-glow text-4xl">Plugins</h1>
+                <h1 className="text-center my-40 text-glow text-4xl">
+                    Plugins
+                </h1>
                 <div>
                     <SpotlightCard
                         className="rounded-xl m-10"
@@ -74,8 +77,8 @@ const App = () => {
                                 FT-Resonator
                             </h1>
                             <p>
-                                FT-Resonator is a 7 voices comb resonator effect plugin
-                                built in Plugdata.
+                                FT-Resonator is a 7 voices comb resonator effect
+                                plugin built in Plugdata.
                                 <br />
                                 Each voice features independent gain, panning,
                                 and detuning controls,
@@ -84,9 +87,7 @@ const App = () => {
                                 <br /> and evolving tonal layers from any input
                                 sound.
                             </p>
-                            <Button>
-                                Coming Soon...
-                            </Button>
+                            <Button>Coming Soon...</Button>
                         </div>
                     </SpotlightCard>
                     {/* <SpotlightCard
@@ -112,17 +113,21 @@ const App = () => {
             </section>
             <section id="contact">
                 <div className="h-screen grid place-items-center">
-                    <div className="block">
+                    <div className="max-w-screen-lg gap-10 block">
                         <h1 className="text-4xl font-bold mb-6 section-title text-center">
                             Get in Touch
                         </h1>
-                        <p
-                            className="subtitle max-w-screen-md">
+                        <p className="subtitle max-w-screen-md">
                             I'm currently open to new opportunities and
                             collaborations. Whether you have a project in mind,
                             want to discuss potential work together, or just
                             want to say hi, feel free to reach out!
                         </p>
+                        <div className="flex gap-4">
+                            <Button>
+                                Discord
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </section>
