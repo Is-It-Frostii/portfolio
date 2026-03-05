@@ -1,9 +1,13 @@
-const Button = ({ children }) => {
+const Button = ({ children, buttonUrl }) => {
     return (
         <>
             <a
-                href="#"
-                className="mt-6 p-3 px-6 bg-green-500 w-fit rounded-lg block hover:bg-green-700 duration-300">
+                href={buttonUrl ? buttonUrl : "#"}
+                className="p-3 px-6
+                    bg-blue-500 w-fit
+                    rounded-lg block
+                    hover:bg-blue-700
+                    duration-300">
                 {children}
             </a>
         </>

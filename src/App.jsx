@@ -4,6 +4,8 @@ import "./App.css";
 import SpotlightCard from "./components/SpotlightCard";
 import Button from "./components/Button";
 
+import ResonatorImage from "./assets/images/resonator.png";
+
 const App = () => {
     return (
         <>
@@ -65,17 +67,19 @@ const App = () => {
                 </div>
             </section>
             <section id="plugins">
-                <h1 className="text-center my-40 text-glow text-4xl">
-                    Plugins
-                </h1>
+                <div className="inline-block w-full">
+                    <h1
+                        id="plugins-section-title"
+                        className="text-center mt-40 mb-20 text-glow text-4xl">
+                        Plugins
+                    </h1>
+                </div>
                 <div>
                     <SpotlightCard
                         className="rounded-xl m-10"
                         spotlightColor="rgba(0, 200, 255, 0.2)">
-                        <div className="block">
-                            <h1 className="text-4xl font-bold mb-6">
-                                FT-Resonator
-                            </h1>
+                        <div className="flex flex-col gap-10">
+                            <h1 className="text-4xl font-bold">FT-Resonator</h1>
                             <p>
                                 FT-Resonator is a 7 voices comb resonator effect
                                 plugin built in Plugdata.
@@ -87,34 +91,38 @@ const App = () => {
                                 <br /> and evolving tonal layers from any input
                                 sound.
                             </p>
-                            <Button>Coming Soon...</Button>
+                            <Button>FREE! Coming Soon...</Button>
+                            <img
+                                src={ResonatorImage}
+                                alt="background"
+                                className="w-full h-full object-cover border border-neutral-800 rounded-xl blur"
+                            />
                         </div>
                     </SpotlightCard>
-                    {/* <SpotlightCard
+                    <SpotlightCard
                         className="rounded-xl m-10"
                         spotlightColor="rgba(255, 255, 255, 0.2)">
-                        <div className="block">
-                            <h1 className="text-4xl font-bold mb-6">
-                                FR-PhaseDistortion
+                        <div className="flex flex-col gap-10">
+                            <h1 className="text-4xl font-bold">
+                                Future Projects
                             </h1>
-                            <p className="max-w-[50%] text-balance">
-                                Maybe planned for future development. Feel free
-                                to reach out if you're interested in
-                                collaborating on this project!
+                            <p>
+                                Feel free to reach out if you're interested in
+                                collaborating on a project!
                             </p>
                             <a
                                 href="#"
-                                className="mt-6 p-3 px-6 bg-gray-500 w-fit rounded-full block">
-                                Coming Soon...
+                                className="p-3 px-6 bg-gray-500 w-fit rounded-lg block">
+                                FR...
                             </a>
                         </div>
-                    </SpotlightCard> */}
+                    </SpotlightCard>
                 </div>
             </section>
             <section id="contact">
                 <div className="h-screen grid place-items-center">
-                    <div className="max-w-screen-lg gap-10 block">
-                        <h1 className="text-4xl font-bold mb-6 section-title text-center">
+                    <div className="max-w-screen-lg flex flex-col gap-10">
+                        <h1 className="text-4xl font-bold section-title text-center">
                             Get in Touch
                         </h1>
                         <p className="subtitle max-w-screen-md">
@@ -124,7 +132,7 @@ const App = () => {
                             want to say hi, feel free to reach out!
                         </p>
                         <div className="flex gap-4">
-                            <Button>
+                            <Button buttonUrl="https://discord.gg/TC7qr8xQhR">
                                 Discord
                             </Button>
                         </div>
