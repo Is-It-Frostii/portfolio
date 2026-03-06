@@ -1,6 +1,6 @@
-import "./Navigation.css";
+import "./NavBar.css";
 
-const Navigation = () => {
+const NavBar = () => {
     return (
         <>
             <nav
@@ -31,4 +31,4 @@ const Navigation = () => {
     );
 };
 
-export default Navigation;
+export default NavBar;
