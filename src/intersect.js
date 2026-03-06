@@ -12,7 +12,4 @@ const SetupObserver = () => {
     animateElements.forEach((element) => observer.observe(element));
 };
 
-// window.addEventListener("load", SetupObserver);
-document.addEventListener("DOMContentLoaded", () => {
-    requestAnimationFrame(SetupObserver);
-});
+window.addEventListener("load", SetupObserver);
