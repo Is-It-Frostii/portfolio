@@ -3,6 +3,8 @@ import Grainient from "./components/Grainient";
 import SpotlightCard from "./components/SpotlightCard";
 import Button from "./components/Button";
 
+import ReactLenis from "lenis/react";
+
 import "./App.css";
 import "./intersect.js";
 
@@ -10,7 +12,8 @@ const App = () => {
     return (
         <>
             <NavBar />
-            <div className="min-h-screen max-w-screen overflow-hidden">
+            <ReactLenis root options={{ duration: 1.2, easing: (t) => 1 - Math.pow(1 - t, 3) }}>
+                <div className="min-h-screen max-w-screen overflow-hidden">
                 <div className="w-full h-screen fixed top-0 left-0 z-[-1]">
                     <Grainient
                         color1="#c285ff"
@@ -39,7 +42,7 @@ const App = () => {
                 </div>
                 <section id="home">
                     <div className="h-screen grid place-items-center">
-                        <div className="max-w-screen-lg gap-10 block animate-hidden">
+                        <div className="max-w-screen-lg gap-10 block">
                             <h1 className="text-4xl text-glow mb-10">
                                 Hi, this is{" "}
                                 <span className="text-blue-300">Frostii</span>
@@ -70,7 +73,7 @@ const App = () => {
                     </div>
                 </section>
                 <section id="plugins">
-                    <div className="inline-block w-full animate-hidden">
+                    <div className="inline-block w-full">
                         <h1
                             id="plugins-section-title"
                             className="text-center mt-40 mb-20 text-glow text-4xl">
@@ -79,9 +82,9 @@ const App = () => {
                     </div>
                     <div className="block">
                         <SpotlightCard
-                            className="rounded-xl m-10 resonator-card animate-hidden"
+                            className="rounded-xl m-10 mx-20 resonator-card animate-hidden"
                             spotlightColor="rgba(0, 200, 255, 0.2)">
-                            <div className="flex flex-col gap-10">
+                            <div className="flex flex-col gap-20">
                                 <h1 className="text-4xl font-bold">
                                     FT-Resonator
                                 </h1>
@@ -105,9 +108,9 @@ const App = () => {
                             </div>
                         </SpotlightCard>
                         <SpotlightCard
-                            className="rounded-xl m-10 bg-neutral-900 animate-hidden"
+                            className="rounded-xl m-10 mx-20 bg-neutral-900 animate-hidden"
                             spotlightColor="rgba(255, 255, 255, 0.2)">
-                            <div className="flex flex-col gap-10">
+                            <div className="flex flex-col gap-20">
                                 <h1 className="text-4xl font-bold">
                                     Future Projects
                                 </h1>
@@ -118,7 +121,7 @@ const App = () => {
                                 <a
                                     href="#"
                                     className="p-3 px-6 bg-gray-500 w-fit rounded-lg block">
-                                    FR...
+                                    Coming Soon...
                                 </a>
                             </div>
                         </SpotlightCard>
@@ -126,7 +129,7 @@ const App = () => {
                 </section>
                 <section id="contact">
                     <div className="h-screen grid place-items-center">
-                        <div className="max-w-screen-lg flex flex-col gap-10 animate-hidden">
+                        <div className="max-w-screen-lg flex flex-col gap-10">
                             <h1 className="text-4xl font-bold section-title text-center">
                                 Get in Touch
                             </h1>
@@ -145,6 +148,7 @@ const App = () => {
                     </div>
                 </section>
             </div>
+            </ReactLenis>
         </>
     );
 };

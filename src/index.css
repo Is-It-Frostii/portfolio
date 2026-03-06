@@ -18,11 +18,13 @@ body {
 
 .animate-hidden {
     opacity: 0;
-    transform: translateX(5%);
+    /* transform: translateY(25%); */
+    scale: 80%;
     transition: all 1s ease;
 }
 
 .animate-show {
     opacity: 1;
-    transform: translateX(0%);
+    scale: 100%;
+    /* transform: translateY(0%); */
 }
